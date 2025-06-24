@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/minecraftStandard/MinecraftStandard.otf);
+    
+}
+
+@font-face {
+    font-family: Minecraftory;
+    src: url(../fonts/minercraftory/Minercraftory.ttf);
+}
+
+* {
+    margin: 0;
+    font-family: Minecraft;
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+
+}
+
+header {
+    grid-row: 1;
+    grid-column: 1 / -1;
+
+    padding: 30px 20px;
+    background-color: #1c1c1c;
+    align-content: center;
+
+}
+
+header > h1 {
+    font-family: Minecraftory;
+    font-size: 40px;
+    text-transform: uppercase;
+    transition: all 1s;
+    cursor: default;
+
+
+    background-image: linear-gradient(to right,
+            #159304,
+            #159304 50%,
+            #fff 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
+}
+
+header > h1:hover{
+    background-position: 0;
+}
+
+nav {
+    grid-row: 2;
+    grid-column: 1 / -1;
+
+    background-color: #313131;
+    align-content: center;
+    text-align: right;
+    padding: 10px;
+}
+
+nav > ul > li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    color: #159304;
+}
+
+main {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+footer {
+    grid-row: 4;
+    grid-column: 1 / -1;
+
+    background-color: #000000;
+    color: #FFFFFF;
+}
