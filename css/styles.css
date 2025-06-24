@@ -80,14 +80,14 @@ nav {
     background-color: #313131;
     align-content: center;
     text-align: right;
-    padding: 10px;
+    padding: 20px;
+    font-size: 0.75rem;
 }
 
 nav > ul > li{
     list-style: none;
     display: inline;
     padding: 10px;
-    text-transform: uppercase;
 }
 
 a {
@@ -96,7 +96,7 @@ a {
 }
 
 a:hover{
-    color: #159304;
+    color: #ce9a00;
 }
 
 main {
