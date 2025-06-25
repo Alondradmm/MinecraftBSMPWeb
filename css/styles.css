@@ -12,6 +12,7 @@
 * {
     margin: 0;
     font-family: Minecraft;
+    box-sizing: border-box;
 }
 
 body {
@@ -41,7 +42,7 @@ header > img {
     height: 100px;
 }
 
-header > h1 {
+.title, .sub_title{
     font-family: Minecraftory;
     font-size: 30px;
     text-transform: uppercase;
@@ -59,6 +60,7 @@ header > h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     width: fit-content;
+    padding-top: 5px;
 }
 
 header > h1::after {
@@ -69,7 +71,7 @@ header > h1::after {
     font-size: 1rem;
 }
 
-header > h1:hover{
+.title:hover, .sub_title:hover{
     background-position: 0;
 }
 
@@ -99,15 +101,80 @@ a:hover{
     color: #ce9a00;
 }
 
+.active {
+    color: #ce9a00;
+}
+
 main {
     grid-row: 3;
     grid-column: 2;
+    margin: 0 10%
+}
+
+.main_title{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.last_news_card {
+    display: flex;
+    background-color: #313131;
+}
+
+.last_news_card > img {
+    object-fit: cover;
+    max-width: 40%;
+    height: auto;
+}
+
+.last_news_card_text {
+    margin: 60px 150px 60px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #FFFFFF;
+    cursor: default;
+    line-height: 2.2rem;
+}
+
+.last_news_card_text > div {
+    margin: 5px 0;
+}
+
+.last_news_card_text > p {
+    font-size: 1rem;
+}
+
+.last_news_card_profiles > span {
+    background-color: #00B0F0;
+    padding: 0 10px;
+    font-size: 0.75rem;
+    box-shadow: 0 5px #006488;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.last_news_card_categories > span {
+    margin-top: 5px;
+    background-color: #dec800;
+    padding: 0 10px;
+    font-size: 0.75rem;
+    box-shadow: 0 5px #ce9a00;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+span:hover {
+    transform: translateY(5px);
+    box-shadow: none;
 }
 
 footer {
     grid-row: 4;
     grid-column: 1 / -1;
 
+    text-align: center;
+    padding: 30px;
+    font-size: 0.75rem;
     background-color: #000000;
     color: #FFFFFF;
 }
