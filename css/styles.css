@@ -246,6 +246,47 @@ span:hover {
 
 
 
+.about_card{
+    background: #313131;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #FFFFFF;
+}
+
+.about_card > div{
+    align-content: center;
+}
+
+.about_card_owner {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff0000;
+}
+
+.about_card_owner > span{
+    display: flex;
+    flex-direction: column;
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.about_card > div > p{
+    padding: 20px;
+}
+
+
+.about_card_img {
+    object-fit: contain;
+    max-width: 20%;
+    height: auto;
+}
+
+.about_card_icon {
+    padding: 20px;
+}
+
+
 footer {
     grid-row: 4;
     grid-column: 1 / -1;
