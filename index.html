@@ -14,10 +14,10 @@
     <nav>
         <ul>
             <li class="active"><a href="#">Principal</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Miembros</a></li>
-            <li><a href="#">Misiones</a></li>
-            <li><a href="#">Reglas</a></li>
+            <li onclick="OpenModal()"><a href="#">Eventos</a></li>
+            <li onclick="OpenModal()"><a href="#">Miembros</a></li>
+            <li onclick="OpenModal()"><a href="#">Misiones</a></li>
+            <li onclick="OpenModal()"><a href="#">Reglas</a></li>
         </ul>
     </nav>
     <main>
@@ -105,5 +105,18 @@
         </section>
     </main>
     <footer>Fan Web Design by Alondradmm – Copyright © BSMP</footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-blur"></div>
+        <div class="modal-content">
+            <img src="img/baguette_smp.png" alt="">
+            <p>Próximamente...</p>
+            <button onclick="CloseModal()">Ok!</button>
+        </div>
+    </div>
+
+    <!-- Creación de JS -->
+    <script src="js/modal.js"></script>
 </body>
 </html>
