@@ -14,10 +14,10 @@
     <nav>
         <ul>
             <li class="active"><a>Principal</a></li>
-            <li><a>Eventos</a></li>
-            <li><a>Miembros</a></li>
-            <li><a>Misiones</a></li>
-            <li><a>Reglas</a></li>
+            <li onclick="OpenToast()"><a>Eventos</a></li>
+            <li onclick="OpenToast()"><a>Miembros</a></li>
+            <li onclick="OpenToast()"><a>Misiones</a></li>
+            <li onclick="OpenToast()"><a>Reglas</a></li>
         </ul>
     </nav>
     <main>
@@ -105,5 +105,15 @@
         </section>
     </main>
     <footer>Fan Web Design by Alondradmm – Copyright © BSMP</footer>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <h5>Próximamente...</h5>
+            <p>Visita la página para encontrar novedades!</p>
+        </div>
+        <div class="progress"></div>
+    </div>
+
+    <script src="js/toast.js"></script>
 </body>
 </html>
