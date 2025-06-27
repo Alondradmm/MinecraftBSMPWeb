@@ -346,12 +346,24 @@ footer {
     grid-row: 4;
     grid-column: 1 / -1;
 
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 100px;  
     padding: 30px;
     font-size: 0.75rem;
     background-color: #000000;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer > span {
+    cursor: default;
+    background-color: #313131;
+    padding: 5px 20px;
+    width: fit-content;
+    margin-left: -5px;
+    box-shadow: 0 5px #1c1c1c;
+    transition: all 0.2s;
 }
 
 /* Toast Notification */
