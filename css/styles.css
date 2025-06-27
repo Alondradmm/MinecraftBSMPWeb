@@ -345,18 +345,24 @@ span:hover {
 footer {
     grid-row: 4;
     grid-column: 1 / -1;
-
-    margin-top: 100px;  
+    margin-top: 100px;
     padding: 30px;
     font-size: 0.75rem;
     background-color: #000000;
     color: #FFFFFF;
     display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div {
+    display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-footer > span {
+footer > div > span {
     cursor: default;
     background-color: #313131;
     padding: 5px 20px;
@@ -364,6 +370,38 @@ footer > span {
     margin-left: -5px;
     box-shadow: 0 5px #1c1c1c;
     transition: all 0.2s;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+    
+}
+
+.social .bxl {
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social .bx-youtube {
+    background-color: #ff0000;
+}
+
+.social .bx-facebook {
+    background-color: #1877F2;
+}
+
+.social .bx-discord-alt {
+    background-color: #5865F2;
+}
+
+.social .bx-twitter-x {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 /* Toast Notification */
