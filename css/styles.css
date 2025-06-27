@@ -395,6 +395,7 @@ footer {
     border: none;
     box-shadow: 0 5px #7c0000;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .modal-content button:hover {
